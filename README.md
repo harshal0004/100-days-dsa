@@ -1,2 +1,2 @@
 # 100-days-dsa
-Hi, My Name is Harshal Dhamale, 2 years experienced software engineer, working in service based company, now I am very keen and aspired to work with top product based companies. So for this purpose I started this venture to strong my problem solving skill by solving pattern wise problems. So stay tune ! Very Excited to start this journey
+Hi, my name is Harshal Dhamale. I am a software engineer with 2 years of experience, currently working in a service-based company. I am highly motivated and aspire to work with top product-based companies. To achieve this, I have started this venture to strengthen my problem-solving skills by solving problems in a pattern-wise manner. Stay tuned—I’m very excited to begin this journey!
