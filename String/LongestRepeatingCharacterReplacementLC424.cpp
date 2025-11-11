@@ -33,6 +33,7 @@ public:
 };
 
 // somehow solve using optimal approach of sliding window
+// https://excalidraw.com/#json=jU7kaHlKTNR2q6AICwNBp,eCvOMbeal5YQx1pUXOxJUg
 class Solution {
 public:
     int characterReplacement(string s, int k) {
