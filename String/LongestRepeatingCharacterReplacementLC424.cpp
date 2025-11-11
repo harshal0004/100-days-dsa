@@ -1,5 +1,5 @@
+// https://excalidraw.com/#json=RweNU7Df7Fl02zGAf0Tt6,tQShVDMs9hecNskRtkX5uw
 // somehow got the brute force approach
-#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -27,6 +27,38 @@ public:
         }
 
         return ans;
+
+        
+    }
+};
+
+// somehow solve using optimal approach of sliding window
+class Solution {
+public:
+    int characterReplacement(string s, int k) {
+        int n = s.size();
+        vector<int> freq(26,0);
+        int l=0, r=0, maxFreq=0,changes,maxLen=0;
+
+        while(r<n){
+            freq[s[r]-'A']++;
+            // maxFreq=*max_element(freq.begin(), freq.end()); my approach but little costly
+            maxFreq=max(maxFreq,freq[s[r]-'A']);
+            int len=r-l+1;
+            changes=len-maxFreq;
+
+            if(changes<=k){
+                maxLen=max(maxLen,len);
+                r++;
+            }else{
+                freq[s[l]-'A']--;
+                l++;
+                r++;
+            }
+                
+        }
+
+        return maxLen;
 
         
     }
